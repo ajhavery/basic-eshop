@@ -1,0 +1,46 @@
+Front end
+------- HTML, CSS and JS
+
+Back end
+------- Node, Express, MongoDB
+
+Key Pages:
+----------
+Sign Up and Login pages - Customer and Administrator
+
+Customer Pages:
+---------------
+--- All Products
+--- Product details
+--- Shopping Cart
+--- All their Orders
+
+Administrator Pages:
+-------------------
+--- Dashboard
+--- All Products list
+--- New product addition pages
+--- Update product page
+--- Order page - view all the orders of all the users
+
+Models 
+------------
+User: {
+    email, password, isAdmin,
+    name,  address
+}
+
+Product: {
+    name, summary, price,
+    image, description
+}
+
+// Cart will not be saved in database but in session
+Cart: {
+    items, totalprice, number of items
+}
+
+Order: {
+    User data, products / cart data,
+    date, status
+}
